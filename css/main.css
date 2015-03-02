@@ -28,11 +28,17 @@ div {
 }
 
 .box {
-  height: 100px;
-  top: calc(50% - 50px);
-  width: 200px;
+    height: 100px;
+    top: calc(50% - 50px);
+    width: 200px;
+    background-color: limegreen;
+    width: 200px;
+    opacity: 0;
+    transition: all 250ms ease-out;
+}
 
-  background-color: limegreen;
+.js-box-expand {
+    opacity: 100;
 }
 
 .diamond {
@@ -43,6 +49,10 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+}
+
+.slide-left {
+
 }
 
 .panel {
@@ -91,3 +101,4 @@ div {
 
   color: mediumpurple;
 }
+
