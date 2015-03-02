@@ -52,7 +52,32 @@ div {
 }
 
 .slide-left {
+    -webkit-transform: translateX(800px);
+    transform: translateX(800px);
+    -webkit-animation: right-in 1s linear forwards;
+    animation: right-in 1s linear forwards;
+}
 
+@-webkit-keyframes right-in {
+    
+    0% {   
+        -webkit-transform: translateX(800px);
+        }
+    
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@keyframes right-in {
+    
+    0% {   
+        -webkit-transform: translateX(800px);
+        }
+    
+    100% {
+        -webkit-transform: translateX(0px);
+    }
 }
 
 .panel {
