@@ -121,6 +121,7 @@ div {
 }
 
 .list {
+
   bottom: 1em;
   margin: 0;
   padding: 0;
@@ -135,11 +136,17 @@ div {
 }
 
 .list li {
+  max-height: 0;
   padding: 0.5em;
 
   background-color: plum;
   border: 1px solid mediumpurple;
 
   color: mediumpurple;
+  transition: all 250ms ease-out;
+  overflow: hidden;
 }
 
+.pull-down {
+    max-height: 30em;
+}
