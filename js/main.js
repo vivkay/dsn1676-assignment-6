@@ -32,7 +32,9 @@ $circle.on('animationend', function () {
 $btnAppend.on('click', function () {
     var $li = $('<li>').html('New List Item'); 
     
-    $list.append($li);
-    $list.addClass('pull-down');
+    $list.prepend($li);
+    $li.addClass('pull-down');
 });
+
+
 
